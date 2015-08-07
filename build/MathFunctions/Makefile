@@ -123,14 +123,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/richlum/Documents/dev/cmake/build/CMakeFiles /Users/richlum/Documents/dev/cmake/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /Users/richlum/Documents/dev/cmake/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/richlum/Documents/dev/cmake/build/CMakeFiles /Users/richlum/Documents/dev/cmake/build/MathFunctions/CMakeFiles/progress.marks
+	cd /Users/richlum/Documents/dev/cmake/build && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/richlum/Documents/dev/cmake/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/richlum/Documents/dev/cmake/build && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/clean
 .PHONY : clean
 
 # The main clean target
@@ -139,68 +139,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/richlum/Documents/dev/cmake/build && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/richlum/Documents/dev/cmake/build && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/richlum/Documents/dev/cmake/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Totorial
+# Convenience name for target.
+MathFunctions/CMakeFiles/MathFunctions.dir/rule:
+	cd /Users/richlum/Documents/dev/cmake/build && $(MAKE) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/MathFunctions.dir/rule
+.PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/rule
 
-# Build rule for target.
-Totorial: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Totorial
-.PHONY : Totorial
-
-# fast build rule for target.
-Totorial/fast:
-	$(MAKE) -f CMakeFiles/Totorial.dir/build.make CMakeFiles/Totorial.dir/build
-.PHONY : Totorial/fast
-
-#=============================================================================
-# Target rules for targets named MathFunctions
-
-# Build rule for target.
-MathFunctions: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MathFunctions
+# Convenience name for target.
+MathFunctions: MathFunctions/CMakeFiles/MathFunctions.dir/rule
 .PHONY : MathFunctions
 
 # fast build rule for target.
 MathFunctions/fast:
-	$(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
+	cd /Users/richlum/Documents/dev/cmake/build && $(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
 .PHONY : MathFunctions/fast
 
-tutorial.o: tutorial.cxx.o
-.PHONY : tutorial.o
+mysqrt.o: mysqrt.cxx.o
+.PHONY : mysqrt.o
 
 # target to build an object file
-tutorial.cxx.o:
-	$(MAKE) -f CMakeFiles/Totorial.dir/build.make CMakeFiles/Totorial.dir/tutorial.cxx.o
-.PHONY : tutorial.cxx.o
+mysqrt.cxx.o:
+	cd /Users/richlum/Documents/dev/cmake/build && $(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o
+.PHONY : mysqrt.cxx.o
 
-tutorial.i: tutorial.cxx.i
-.PHONY : tutorial.i
+mysqrt.i: mysqrt.cxx.i
+.PHONY : mysqrt.i
 
 # target to preprocess a source file
-tutorial.cxx.i:
-	$(MAKE) -f CMakeFiles/Totorial.dir/build.make CMakeFiles/Totorial.dir/tutorial.cxx.i
-.PHONY : tutorial.cxx.i
+mysqrt.cxx.i:
+	cd /Users/richlum/Documents/dev/cmake/build && $(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.i
+.PHONY : mysqrt.cxx.i
 
-tutorial.s: tutorial.cxx.s
-.PHONY : tutorial.s
+mysqrt.s: mysqrt.cxx.s
+.PHONY : mysqrt.s
 
 # target to generate assembly for a file
-tutorial.cxx.s:
-	$(MAKE) -f CMakeFiles/Totorial.dir/build.make CMakeFiles/Totorial.dir/tutorial.cxx.s
-.PHONY : tutorial.cxx.s
+mysqrt.cxx.s:
+	cd /Users/richlum/Documents/dev/cmake/build && $(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.s
+.PHONY : mysqrt.cxx.s
 
 # Help Target
 help:
@@ -211,15 +199,14 @@ help:
 	@echo "... install/strip"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Totorial"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... test"
-	@echo "... install/local"
 	@echo "... MathFunctions"
-	@echo "... tutorial.o"
-	@echo "... tutorial.i"
-	@echo "... tutorial.s"
+	@echo "... install/local"
+	@echo "... mysqrt.o"
+	@echo "... mysqrt.i"
+	@echo "... mysqrt.s"
 .PHONY : help
 
 
@@ -231,6 +218,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/richlum/Documents/dev/cmake/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

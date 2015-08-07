@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.2.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.2.3/CMakeSystem.cmake"
   "/Users/richlum/Documents/dev/cmake/src/CMakeLists.txt"
+  "/Users/richlum/Documents/dev/cmake/src/MathFunctions/CMakeLists.txt"
   "/Users/richlum/Documents/dev/cmake/src/TutorialConfig.h.in"
   "/opt/local/share/cmake-3.2/Modules/CMakeCInformation.cmake"
   "/opt/local/share/cmake-3.2/Modules/CMakeCXXInformation.cmake"
@@ -42,9 +43,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "TutorialConfig.h"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "MathFunctions/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Totorial.dir/DependInfo.cmake"
+  "MathFunctions/CMakeFiles/MathFunctions.dir/DependInfo.cmake"
   )

@@ -81,6 +81,7 @@ Totorial_EXTERNAL_OBJECTS =
 
 Totorial: CMakeFiles/Totorial.dir/tutorial.cxx.o
 Totorial: CMakeFiles/Totorial.dir/build.make
+Totorial: MathFunctions/libMathFunctions.a
 Totorial: CMakeFiles/Totorial.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable Totorial"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Totorial.dir/link.txt --verbose=$(VERBOSE)

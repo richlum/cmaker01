@@ -1,0 +1,174 @@
+Start testing: Aug 06 20:53 PDT
+----------------------------------------------------------
+1/8 Testing: TutorialRuns
+1/8 Test: TutorialRuns
+Command: "/Users/richlum/Documents/dev/cmake/build/Totorial" "25"
+Directory: /Users/richlum/Documents/dev/cmake/build
+"TutorialRuns" start time: Aug 06 20:53 PDT
+Output:
+----------------------------------------------------------
+mysqrt cnt 1, est 7.25, delta 27.5625
+mysqrt cnt 2, est 5.34914, delta 3.61328
+mysqrt cnt 3, est 5.01139, delta 0.114071
+mysqrt cnt 4, est 5.00001, delta 0.000129531
+mysqrt cnt 5, est 5, delta 1.67777e-10
+The square root of 25 is 5
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"TutorialRuns" end time: Aug 06 20:53 PDT
+"TutorialRuns" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/8 Testing: TutorialComp25
+2/8 Test: TutorialComp25
+Command: "/Users/richlum/Documents/dev/cmake/build/Totorial" "25"
+Directory: /Users/richlum/Documents/dev/cmake/build
+"TutorialComp25" start time: Aug 06 20:53 PDT
+Output:
+----------------------------------------------------------
+mysqrt cnt 1, est 7.25, delta 27.5625
+mysqrt cnt 2, est 5.34914, delta 3.61328
+mysqrt cnt 3, est 5.01139, delta 0.114071
+mysqrt cnt 4, est 5.00001, delta 0.000129531
+mysqrt cnt 5, est 5, delta 1.67777e-10
+The square root of 25 is 5
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found.Regex=[25 is 5
+]
+"TutorialComp25" end time: Aug 06 20:53 PDT
+"TutorialComp25" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/8 Testing: TutorialNegative
+3/8 Test: TutorialNegative
+Command: "/Users/richlum/Documents/dev/cmake/build/Totorial" "-25"
+Directory: /Users/richlum/Documents/dev/cmake/build
+"TutorialNegative" start time: Aug 06 20:53 PDT
+Output:
+----------------------------------------------------------
+The square root of -25 is 0
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found.Regex=[25 is 0
+]
+"TutorialNegative" end time: Aug 06 20:53 PDT
+"TutorialNegative" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/8 Testing: TutorialSmall
+4/8 Test: TutorialSmall
+Command: "/Users/richlum/Documents/dev/cmake/build/Totorial" ".0001"
+Directory: /Users/richlum/Documents/dev/cmake/build
+"TutorialSmall" start time: Aug 06 20:53 PDT
+Output:
+----------------------------------------------------------
+mysqrt cnt 1, est 1.00003, delta 0.99995
+mysqrt cnt 2, est 0.500062, delta 0.249963
+mysqrt cnt 3, est 0.250131, delta 0.0624656
+mysqrt cnt 4, est 0.125266, delta 0.0155914
+mysqrt cnt 5, est 0.0630319, delta 0.00387302
+mysqrt cnt 6, est 0.0323092, delta 0.000943885
+mysqrt cnt 7, est 0.0177021, delta 0.000213366
+mysqrt cnt 8, est 0.0116756, delta 3.63194e-05
+mysqrt cnt 9, est 0.0101202, delta 2.41913e-06
+The square root of 0.0001 is 0.0101202
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found.Regex=[0.0001 is 0.010
+]
+"TutorialSmall" end time: Aug 06 20:53 PDT
+"TutorialSmall" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/8 Testing: TutorialUsage
+5/8 Test: TutorialUsage
+Command: "/Users/richlum/Documents/dev/cmake/build/Totorial"
+Directory: /Users/richlum/Documents/dev/cmake/build
+"TutorialUsage" start time: Aug 06 20:53 PDT
+Output:
+----------------------------------------------------------
+Usage: /Users/richlum/Documents/dev/cmake/build/Totorial number
+/Users/richlum/Documents/dev/cmake/build/Totorial Version 1.0
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found.Regex=[Usage:.*number
+]
+"TutorialUsage" end time: Aug 06 20:53 PDT
+"TutorialUsage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/8 Testing: TutComp36
+6/8 Test: TutComp36
+Command: "/Users/richlum/Documents/dev/cmake/build/Totorial" "36"
+Directory: /Users/richlum/Documents/dev/cmake/build
+"TutComp36" start time: Aug 06 20:53 PDT
+Output:
+----------------------------------------------------------
+mysqrt cnt 1, est 10, delta 64
+mysqrt cnt 2, est 6.8, delta 10.24
+mysqrt cnt 3, est 6.04706, delta 0.56692
+mysqrt cnt 4, est 6.00018, delta 0.00219733
+mysqrt cnt 5, est 6, delta 3.35276e-08
+The square root of 36 is 6
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found.Regex=[36 is 6
+]
+"TutComp36" end time: Aug 06 20:53 PDT
+"TutComp36" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/8 Testing: TutComp16
+7/8 Test: TutComp16
+Command: "/Users/richlum/Documents/dev/cmake/build/Totorial" "16"
+Directory: /Users/richlum/Documents/dev/cmake/build
+"TutComp16" start time: Aug 06 20:53 PDT
+Output:
+----------------------------------------------------------
+mysqrt cnt 1, est 5, delta 9
+mysqrt cnt 2, est 4.1, delta 0.81
+mysqrt cnt 3, est 4.00122, delta 0.00975758
+mysqrt cnt 4, est 4, delta 1.48676e-06
+The square root of 16 is 4
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found.Regex=[16 is 4
+]
+"TutComp16" end time: Aug 06 20:53 PDT
+"TutComp16" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/8 Testing: TutComp-3
+8/8 Test: TutComp-3
+Command: "/Users/richlum/Documents/dev/cmake/build/Totorial" "-3"
+Directory: /Users/richlum/Documents/dev/cmake/build
+"TutComp-3" start time: Aug 06 20:53 PDT
+Output:
+----------------------------------------------------------
+The square root of -3 is 0
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found.Regex=[-3 is 0
+]
+"TutComp-3" end time: Aug 06 20:53 PDT
+"TutComp-3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 06 20:53 PDT
